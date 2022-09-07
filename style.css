@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background-color: hsl(0, 0%, 100%);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 15px;
+    max-width: 600px;
+    
+}
+
+.content .img{
+    background-image: url(/images/image-product-desktop.jpg);
+    width: 100%;
+    border-start-start-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 65vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.textBox {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 6px;
+    position: relative;
+    width: 100%;
+}
+
+.textBox > h1:nth-child(2) {
+    font-size: 41px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}    
+
+.textBox > p:nth-child(1) {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: hsl(158, 36%, 37%);
+    }
+
+.textBox > p:nth-child(3) {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    color: hsl(158, 36%, 37%);
+}   
+
+.price {
+    display: flex;
+}
+
+.price > p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.price > p:nth-child(2) {
+    margin-left: 15px;
+    font-size: 14px;
+    margin-top: 40px;
+    text-decoration: line-through;
+    color: hsl(158, 36%, 37%);
+}
+
+.btn > img:nth-child(1) {
+    width: auto;
+}
+
+.btn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: hsl(158, 15%, 29%);
+}
+
+.btn > span:nth-child(2) {
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 628px){
+    .content {
+        background-color: hsl(0, 0%, 100%);
+        position: relative;
+        display: block;
+        align-items: center;
+        border-radius: 15px;
+        max-width: 375px;
+      }
+
+      .content .img{
+        background-image: url(/images/image-product-mobile.jpg);
+        width: 100%;
+        border-start-end-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0px;
+        height: 32vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .textBox > h1:nth-child(2) {
+        font-size: 36px;
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+      }
+}
