@@ -23,7 +23,7 @@ body{
 }
 
 .content .img{
-    background-image: url(/images/image-product-desktop.jpg);
+    background-image: url(../product-preview-card-component-main/images/image-product-desktop.jpg);
     width: 100%;
     border-start-start-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -116,7 +116,7 @@ body{
       }
 
       .content .img{
-        background-image: url(/images/image-product-mobile.jpg);
+        background-image: url(../product-preview-card-component-main/images/image-product-mobile.jpg);
         width: 100%;
         border-start-end-radius: 15px;
         border-top-left-radius: 15px;
